@@ -6,6 +6,7 @@ def vraag1():
         print("je vlucht niet en gaat dood. DEAD ENDING")
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag1()
 
 def vraag2():
     antwoord2 = input("je vlucht uit je huis en laat je ouders achter, waar ga je naartoe? \n a = een dichtbij gelegen stad \n b = een taliban stad \n c = naar Pakistan ")
@@ -17,6 +18,7 @@ def vraag2():
         print("je gaat naar pakistan maar wordt weer uitgeleverd aan de taliban. PRISON ENDING")
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag2()
 
 def vraag3():
     antwoord3 = input("je stapt de auto in en rijd naar een stad waar de taliban nog niet is. daar wordt het nu ook gevaarlijk. Wat doe je nu? \n a = naar europa rijden \n b = blijven \n c = naar Pakistan ")
@@ -28,6 +30,7 @@ def vraag3():
         print("je gaat naar pakistan maar wordt weer uitgeleverd aan de taliban. PRISON ENDING")
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag3()
 
 def vraag4():
     antwoord4 = input("je komt aan in europa. wat wil je doen? \n a = je vlucht naar nederland \n b = je gaat naar belgië \n c = je gaat naar duitsland ")
@@ -39,6 +42,7 @@ def vraag4():
         vraag14()
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag4()
 
 def vraag5():
     antwoord5 = input("je gaat naar een stad die door de taliban wordt beheerst. Ze zien dat je alleen bent. ze vragen of jij je wilt aansluiten bij de taliban. \n a = aansluiten \n b = niet aansluiten ")
@@ -48,6 +52,7 @@ def vraag5():
         vraag6()
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag5()
 
 def vraag6():
     antwoord6 = input("je zegt dat je niet bij ze aansluit, ren je weg of ren je een huis in? \n a = wegrennen \n b= huis in rennen ")
@@ -57,6 +62,7 @@ def vraag6():
         vraag7()
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag6()
 
 def vraag7():
     antwoord7 = input("je rent een huis in en de familie daar schrikt ren je het huis uit of blif je daar schuilen? \n a = wegrennen \n b = schuilen ")
@@ -66,6 +72,7 @@ def vraag7():
         vraag9()
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag7()
 
 def vraag8():
     antwoord8 = input("je rent weg en word niet gezien door de taliban. vlucht je nu naar het buiteland of naar een andere stad? \n a = buitenland \n b = andere stad ")
@@ -75,6 +82,7 @@ def vraag8():
         vraag12()
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag8()
 
 def vraag9():
     antwoord9 = input("waar wil je schuilen \n a = een kast \n b = onder een bed \n c = de kelder ")
@@ -86,15 +94,17 @@ def vraag9():
         print("ze vinden je in de kelder en je wordt gevangn genomen. PRISON ENDING")
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag9()
 
 def vraag10():
     antwoord10 = input("je bent veilig naar nederland gegaan. wil je jouw familie ook naar nederland laten komen? ja of nee ")
-    if antwoord10 == "a":
+    if antwoord10 == "ja":
         print("je familie komt ook naar nederland. GOOD ENDING")
-    elif antwoord10 == "b":
+    elif antwoord10 == "nee":
         print("je familie komt niet naar nederland en gaan dood in afghanistan. DEVIL'S ENDING")
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag10()
 
 def vraag11():
     antwoord11 = input("naar welk land vlucht je? \n a = pakistan \n b = turkmenistan \n c = iran \n d = tajikistan")
@@ -108,6 +118,7 @@ def vraag11():
         print("je gaat naar tajikistan en leeft daar je leven uit. TAJIKISTAN ENDING")
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag11()
 
 def vraag12():
     antwoord12 = input("je gaat naar een andere stad wil je hier blijven of naar europa gaan? \n a = blijven \n b = naar europa")
@@ -115,13 +126,21 @@ def vraag12():
         vraag15()
     elif antwoord12 == "b":
         vraag4()
+    else:
+        print("het ingevulde antwoord is niet geldig")
+        vraag12()
 
 def vraag13():
     antwoord13 = input("waar wil je wonen in belgië? \n a = naar brussel gaan \n b = naar antwerpen")
     if antwoord13 == "a":
         vraag17()
-    if antwoord13 == "b":
+    elif antwoord13 == "b":
         vraag18()
+    elif antwoord13 == "c":
+        vraag21()
+    else:
+        print("het ingevulde antwoord is niet geldig")
+        vraag13()
 
 def vraag14():
     antwoord14a = input("waar in duitsland wil je wonen? \n a = wenen \n b = keulen \n c = berlijn")
@@ -134,15 +153,11 @@ def vraag14():
             vraag14()
     elif antwoord14a == "b":
         vraag20()
-
-def vraag19():
-    antwoord19 = input("je bent veilig oostenrijk gegaan. wil je jouw familie ook naar oostenrijk laten komen? ja of nee ")
-    if antwoord19 == "a":
-        print("je familie komt ook naar oostenrijk. GOOD ENDING")
-    elif antwoord19 == "b":
-        print("je familie komt niet naar oostenrijk en gaan dood in afghanistan. DEVIL'S ENDING")
+    elif antwoord14a == "c":
+        vraag22()
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag14()
 
 def vraag15():
     antwoord15 = input("de taliban komt aan in de stad. Ze zien dat je alleen bent. ze vragen of jij je wilt aansluiten bij de taliban. \n a = aansluiten \n b = niet aansluiten ")
@@ -152,4 +167,61 @@ def vraag15():
         vraag6()
     else:
         print("het ingevulde antwoord is niet geldig")
+        vraag15()
+
+def vraag16():
+    antwoord16 = input("je bent in iran maar je moet verder naar europa hoe wil je er naartoe? \n a = vliegtuig \n b = lopen \n c = een auto stelen")
+    if antwoord16 == "a":
+        vraag4()
+    elif antwoord16 == "b":
+        print("je loopt te lang zonder eten en drinken daardoor ga je dood. DEAD ENDING")
+    elif antwoord16 == "c":
+        print("je steelt een auto maar wordt gepakt door de politie. PRISON ENDING")
+    else:
+        print("het ingevulde antwoord is niet geldig")
+        vraag16()
+
+def vraag17():
+    antwoord17 = input("wil je hier echt wonen? ja of nee")
+    if antwoord17 == "ja":
+        print("je bent in brussel gaan wonen maar je woont er illegaal dus word je terug gestuurd. SENT BACK ENDING")
+    elif antwoord17 == "nee":
+        vraag13()
+
+def vraag18():
+    antwoord17 = input("wil je hier echt wonen? ja of nee")
+    if antwoord17 == "ja":
+        print("je bent in antwerpen gaan wonen maar je woont er illegaal dus word je terug gestuurd. SENT BACK ENDING")
+    elif antwoord17 == "nee":
+        vraag13()
+
+
+def vraag19():
+    antwoord19 = input("je bent veilig angekomen. wil je jouw familie ook naar hier laten komen? ja of nee ")
+    if antwoord19 == "a":
+        print("je familie komt ook hier naartoe. GOOD ENDING")
+    elif antwoord19 == "b":
+        print("je familie komt niet hier en gaan dood in afghanistan. DEVIL'S ENDING")
+    else:
+        print("het ingevulde antwoord is niet geldig")
+        vraag19()
+
+def vraag20():
+    antwoord20 = input("wil je hier echt wonen? ja of nee")
+    if antwoord20 == "nee":
+        vraag19()
+    if antwoord20 == "ja":
+        vraag19()
+
+def vraag21():
+    antwoord21 = input("waar wil je dan wonen? \n a = nederland \n b = belgië \n c = duitsland ")
+    if antwoord21 == "a":
+        vraag10()
+    if antwoord21 == "b":
+        vraag13()
+    if antwoord21 == "c":
+        vraag14()
+    else:
+        print("het ingevulde antwoord is niet geldig")
+        vraag21()   
 vraag1()
