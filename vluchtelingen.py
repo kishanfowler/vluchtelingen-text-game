@@ -65,7 +65,7 @@ def vraag6():
         vraag6()
 
 def vraag7():
-    antwoord7 = input("je rent een huis in en de familie daar schrikt ren je het huis uit of blif je daar schuilen? \n a = wegrennen \n b = schuilen ")
+    antwoord7 = input("je rent een huis in en de familie daar schrikt ren je het huis uit of blijf je daar schuilen? \n a = wegrennen \n b = schuilen ")
     if antwoord7 == "a":
         vraag8()
     elif antwoord7 == "b":
@@ -154,7 +154,7 @@ def vraag14():
     elif antwoord14a == "b":
         vraag20()
     elif antwoord14a == "c":
-        vraag22()
+        vraag19()
     else:
         print("het ingevulde antwoord is niet geldig")
         vraag14()
@@ -189,18 +189,18 @@ def vraag17():
         vraag13()
 
 def vraag18():
-    antwoord17 = input("wil je hier echt wonen? ja of nee")
-    if antwoord17 == "ja":
+    antwoord18 = input("wil je hier echt wonen? ja of nee")
+    if antwoord18 == "ja":
         print("je bent in antwerpen gaan wonen maar je woont er illegaal dus word je terug gestuurd. SENT BACK ENDING")
-    elif antwoord17 == "nee":
+    elif antwoord18 == "nee":
         vraag13()
 
 
 def vraag19():
     antwoord19 = input("je bent veilig angekomen. wil je jouw familie ook naar hier laten komen? ja of nee ")
-    if antwoord19 == "a":
+    if antwoord19 == "ja":
         print("je familie komt ook hier naartoe. GOOD ENDING")
-    elif antwoord19 == "b":
+    elif antwoord19 == "nee":
         print("je familie komt niet hier en gaan dood in afghanistan. DEVIL'S ENDING")
     else:
         print("het ingevulde antwoord is niet geldig")
@@ -209,8 +209,8 @@ def vraag19():
 def vraag20():
     antwoord20 = input("wil je hier echt wonen? ja of nee")
     if antwoord20 == "nee":
-        vraag19()
-    if antwoord20 == "ja":
+        vraag21()
+    elif antwoord20 == "ja":
         vraag19()
 
 def vraag21():
